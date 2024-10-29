@@ -163,3 +163,18 @@ public class StaticIntImpl implements StaticInt{
 }
 ```
 #### Optional Class
+
+
+
+### Max function from the java 8 streams ?
+
+- max function from the java 8 is used for identifying of the maximum element from the stream.
+- it will be accepting he comparator which is used for comparing of the elements to identify the max element from the stream.
+- for e.g. we have list of the numbers and we want to identify the max number from it
+
+```
+ List<Integer> allNumbersList = List.of(3, 5, 7, 2, 8);
+ allNumbersList.stream().max(Integer::compareTo).get();
+```
+
+- if you want you can create the own comparator and provide to the max function.
